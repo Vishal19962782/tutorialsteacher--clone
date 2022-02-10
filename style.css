@@ -1,0 +1,184 @@
+body{
+    margin: 0;
+    font-family: Lato,Helvetica,Arial,sans-serif;
+    overflow-x: hidden;
+    
+ 
+}
+.navbar{
+    background-color:rgb(231, 231, 231);
+    height: 60px;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 3fr repeat(9,1fr) 0.5fr;
+    text-align: center;
+    padding-left:260px;
+    padding-right:280px;
+    box-shadow: 0px 1px 20px
+    
+}
+.navbar div{
+    margin-top:auto;
+    margin-bottom: auto;
+}
+.logo{
+    font-weight: bold;
+    font-size: 30px;
+    min-width:277px;
+}
+.navbar div:hover{
+    cursor: pointer;
+    color:#86BC42;
+}
+.cardgrid{
+    margin-top: 30px;
+    width: 300px;
+    height: auto;
+    /* background-color: aqua; */
+    /* margin:0 auto; */
+    
+}
+
+.card{
+
+    background-color:grey;
+    display:flex;
+    flex-direction: column;
+    
+    
+}
+.cardinfo{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:#FAFAFA;
+   
+    
+}
+.card img:hover{
+    transform: scale(1.02);
+    transition: 0.8s;
+
+}
+.card:hover{
+    
+  box-shadow: 2px 4px 10px #000000;
+  transition: 0.4s;
+  transform: scale(1.01);
+}
+
+.cardinfo button{
+    margin-bottom: 15px;
+    background-color:#86BC42;
+  
+    outline:none;
+    border:none;
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+
+}
+
+.footer{
+    width: 100%;
+    height: 400px;
+    background-color:#242C42;
+    grid-template-columns:1.4fr 2fr 2fr;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+.info{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.Heading{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color:#86BC42
+}
+.infotext{
+    margin-top:30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+.mailid{
+    margin-top:30px;
+    display: flex
+
+}
+.cardHeading{
+    margin-top:30px;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.tutorial{
+    display: flex;
+    flex-direction: column;
+}
+li{
+    padding-bottom: 10px;
+    color:white;
+}
+ul{
+    padding-left: 10px;
+    list-style-type: none;
+  }
+ul li:before{
+    content: '>';
+    color:#86BC42;
+    font-weight: bold;
+}
+.listflex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   gap: 5px;
+}
+.mail{
+display: flex;
+flex-direction: column;
+color: whitesmoke;
+}
+.mail div{
+    padding-bottom:10px;
+    padding-right: 20px;
+}
+.mail input{
+    width: 210px;
+    height:30px;
+}
+.mail button{
+    height: 100%;
+    background-color:#86BC42;
+    justify-content: center;
+    vertical-align: middle;
+    width: 40px;
+    color:#FAFAFA;
+    border: none;
+    margin-bottom: 2.5px;
+    
+}
+/* .card::after {
+    content:'';
+    position:relative;
+    display:none;
+    width:5px;
+    height:5px;
+    top:50px;
+    
+} */
+.card::after:hover{
+      content:'';
+    position:relative;
+    /* display:none; */
+    width:5px;
+    height:5px;
+    top:50px;
+}
